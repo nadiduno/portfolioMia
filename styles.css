@@ -1,3 +1,4 @@
+/* https://color.adobe.com/es/trends/Graphic-design */
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +6,11 @@
 }
 html {
   --primary-color:#14140F;
-  --secundary-color:#F26800; 
-  --third-color:#A3CCAB;
-  --fourth-color:#34675C;
-  --fifth-color:#001542;
-  --sixth-color:#053D38;
+  --secundary-color:#BF7F5A; 
+  --third-color:#261C1E;
+  --fourth-color:#F22E3E;
+  --fifth-color:#8C583A;
+  --sixth-color:#A61723;
   --text-color:balck;
 }
 body {
@@ -58,7 +59,7 @@ body {
   margin-top:3rem;
   width:10rem;
   height:2rem;
-  background-color:var(--secundary-color);
+  background-color:var(--sixth-color);
   color:white;
   font-style: bold;
   font-weight: 700;
@@ -74,7 +75,7 @@ body {
   margin-top:7.3rem;
   width:15rem;
   height:2rem;
-  background-color:var(--secundary-color);
+  background-color:var(--sixth-color);
   color:white;
   font-style: bold;
   font-weight: 700;
@@ -125,6 +126,9 @@ body {
 .image1{
   width:100px;
 }
+.image2{
+  width:130px;
+}
 .container3{
   display:block;
   justify-content:center;
@@ -162,6 +166,16 @@ body {
 #image img{
   width:12rem;
 }
+
+#image2{
+  display: block;
+  justify-content:between;
+  align-content: center;
+}
+
+#image2 img{
+  width:15rem;
+}
 .image1{
   padding:1rem;
   background-color:var(--third-color);
@@ -170,7 +184,17 @@ body {
 
 .box1{
   width:12rem;
-  color:var(--primary-color); 
+  color:white; 
+}
+.image2{
+  padding:1rem;
+  background-color:var(--fourth-color);
+  border-radius: 0.7rem; */
+}
+
+.box2{
+  width:12rem;
+  color:white; 
 }
 .local{
   padding:2rem;
@@ -197,14 +221,14 @@ body {
 a{
   text-decoration: none;
   opacity:.9;
-  color:var(--sixth-color);
+  color:var(--primary-color);
 }
 a:hover{
   opacity:1;
 }
 footer{
-  background-color:var(--third-color);
-  color:var(--subtext2-color);
+  background-color:var(--secundary-color);
+  color:white;
   display:flex;
   justify-content:space-evenly;
   align-content: center;
@@ -226,6 +250,11 @@ footer{
   #image {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 1fr 1fr 1fr */
+    padding:0 1rem;
+  }
+  #image2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 1fr 1fr 1fr */
     padding:0 1rem;
   }
 }
